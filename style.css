@@ -1,0 +1,97 @@
+body{
+    background-image: url("1.jpg");
+    background-size: cover;
+}
+.container{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+h1{
+    font-size: 5rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgba(19, 64, 154, 0.868);
+    cursor: pointer;
+    animation: slideRight 1.7s ease forwards;
+    opacity: 0;
+}
+span{
+    color: hsl(356, 75%, 59%);
+}
+span:hover{
+    color:hsl(356, 75%,  75%);
+}
+@keyframes slideRight{
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+h1:hover{
+    color: rgba(15, 92, 244, 0.868);
+}
+#calculator{
+    display: grid;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgba(19, 64, 154, 0.868);
+    box-shadow: 0px 7px 35px rgba(23, 30, 33, 0.8);
+    border-radius: 15px;
+    max-width: 350px;
+    overflow: hidden;
+}
+#display{
+    width: 100%;
+    padding: 20px;
+    font-size: 2.5rem;
+    text-align: left;
+    border: none;
+    background-color: rgba(6, 44, 120, 0.868);
+    color: white;
+}
+#keys{
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 25px;
+}
+button{
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    border: none;
+    background-color: hsl(0, 0%, 30%);
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+button:hover{
+    background-color: hsl(0, 0%, 40%);
+}
+button:active{
+    background-color: hsl(0, 0%, 50%);
+}
+.operator-btn{
+    background-color: hsl(356, 75%, 59%);
+}
+.operator-btn:hover{
+    background-color: hsl(356, 75%,  65%);
+}
+.operator-btn:active{
+    background-color:hsl(356, 75%,  75%);
+}
+.last-text p{
+    text-align: center;
+    padding: 25px;
+    font-size: 1.2rem;
+    font-weight: 300;
+    font-family:'Segoe UI';
+}
